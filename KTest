@@ -1,0 +1,75 @@
+/*
+*This class is a tester that creates the graph 
+*and adds edges to it
+*
+*@author Katrina Mehring
+*
+*@params v number of vertices
+*@params e number of edges
+*
+*/
+
+public class KTest
+{
+	public static void main(String [] args)
+	{
+		int v = 8;
+		int e = 13;
+		
+		KGraph3 kGraph = new KGraph3(v,e);
+		
+		kGraph.edge[0].start = 0;
+		kGraph.edge[0].end = 1;
+		kGraph.edge[0].weight = 18;
+		
+		kGraph.edge[1].start = 1;
+		kGraph.edge[1].end = 2;
+		kGraph.edge[1].weight = 6;
+		
+		kGraph.edge[2].start = 0;
+		kGraph.edge[2].end = 3;
+		kGraph.edge[2].weight = 1;
+		
+		kGraph.edge[3].start = 1;
+		kGraph.edge[3].end = 4;
+		kGraph.edge[3].weight = 5;
+		
+		kGraph.edge[4].start = 2;
+		kGraph.edge[4].end = 4;
+		kGraph.edge[4].weight = 12;
+		
+		kGraph.edge[5].start = 3;
+		kGraph.edge[5].end = 4;
+		kGraph.edge[5].weight = 27;
+		
+		kGraph.edge[6].start = 3;
+		kGraph.edge[6].end = 5;
+		kGraph.edge[6].weight = 31;
+		
+		kGraph.edge[7].start = 2;
+		kGraph.edge[7].end = 6;
+		kGraph.edge[7].weight = 7;
+		
+		kGraph.edge[8].start = 4;
+		kGraph.edge[8].end = 5;
+		kGraph.edge[8].weight = 15;
+		
+		kGraph.edge[9].start = 4;
+		kGraph.edge[9].end = 6;
+		kGraph.edge[9].weight = 11;
+		
+		kGraph.edge[10].start = 4;
+		kGraph.edge[10].end = 7;
+		kGraph.edge[10].weight = 3;
+		
+		kGraph.edge[11].start = 5;
+		kGraph.edge[11].end = 7;
+		kGraph.edge[11].weight = 17;
+		
+		kGraph.edge[12].start = 6;
+		kGraph.edge[12].end = 7;
+		kGraph.edge[12].weight = 21;
+		
+		kGraph.kruskal();
+	}
+}
